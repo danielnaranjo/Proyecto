@@ -10,13 +10,6 @@ var path = require('path');
 var app = express();
 //var io = require('socket.io').listen(app);
 
-
-// Parse API
-var Parse = require('node-parse-api').Parse;
-var APP_ID = "RqQEJnAKitMqGLcNtN0ijJ1sLvgL5sx8unBoSTpn";
-var MASTER_KEY = "7U8bj5j5vgtxT06NrD9Et1TzS7uNNIKS4xrV3I6m";
-var parse = new Parse(APP_ID, MASTER_KEY);
-
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
