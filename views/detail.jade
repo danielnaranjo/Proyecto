@@ -1,0 +1,108 @@
+extends layout
+
+block content
+      section#perfil
+        #cuatro
+          #anuncio
+            img(src='http://placehold.it/500x400', alt='')
+          #descripcion
+            h3 Descripcion.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed erat tristique sem rutrum laoreet facilisis ut tortor. Cras tristique ultricies est sit amet consequat. Quisque nibh nunc, consequat at molestie vel, fermentum sit amet felis. Donec id lectus ligula, non tempus ante. Aliquam ut turpis enim, eget rhoncus arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat accumsan felis, in mattis sapien fringilla et. Nullam placerat viverra massa, eu vestibulum neque blandit in. Morbi ac diam ac elit interdum tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas laoreet, enim sit amet faucibus rhoncus, eros tortor.
+          #discuss
+            #disqus_thread
+            script
+              var disqus_shortname = 'findby';
+              var disqus_url = window.location.href; console.log(disqus_url);
+              (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            noscript
+              | Please enable JavaScript to view the
+              a(href='http://disqus.com/?ref_noscript') comments powered by Disqus.
+          
+          #publicidadmovil
+            script
+              google_ad_client = "ca-pub-3074485176185204";
+              /* findbyco-320x50-text-230912 */ 
+              google_ad_slot = "3014242015"; 
+              google_ad_width = 320; 
+              google_ad_height = 50;
+            script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+            // Google AdSense
+
+        #cinco
+          #contactar
+            .gris Contactar al anunciante
+            .glyph
+              .fs1(aria-hidden='true', data-icon='', title='Llamar al cliente')
+            .glyph
+              .fs1(aria-hidden='true', data-icon='', title='Enviar preguntas')
+            .glyph
+              .fs1(aria-hidden='true', data-icon='', title='Facebook')
+            .glyph
+              .fs1(aria-hidden='true', data-icon='', title='Twitter')
+          #compartir
+            .gris
+            // AddThis Button BEGIN
+            .addthis_toolbox.addthis_default_style.addthis_32x32_style
+              a.addthis_button_preferred_1
+              a.addthis_button_preferred_2
+              a.addthis_button_preferred_3
+              a.addthis_button_preferred_4
+              a.addthis_button_compact
+              a.addthis_counter.addthis_bubble_style
+            script
+              var addthis_config = {"data_track_addressbar":true};
+            script(src='http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fbdcf40ea81860')
+            // AddThis Button END
+            
+          #publicidad
+            script
+              google_ad_client = "ca-pub-3074485176185204";
+              /* findbyco-250x250-230913 */ 
+              google_ad_slot = "5370019667"; 
+              google_ad_width = 250; 
+              google_ad_height = 250; 
+            script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+            // Google AdSense
+
+      // perfil
+      section.vermas
+        div
+          | Mas anuncios de 
+          a.azul(href='#') {sunombre}
+
+      section.js-masonry
+        #contenido Cargando contenido, por favor espere..
+      // principal
+
+      section.similar
+        div
+          | Anuncios cercanos en {ciudad}
+
+      section.js-masonry
+        #contenido2
+      // principal
+
+      section.vermas
+        #publicidadmovil
+            script
+              google_ad_client = "ca-pub-3074485176185204";
+              /* findbyco-320x50-text-230912 */ 
+              google_ad_slot = "3014242015"; 
+              google_ad_width = 320; 
+              google_ad_height = 50; 
+            script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+            // Google AdSense
+
+      script(type='text/javascript')
+        var disqus_shortname = 'findby'; // required: replace example with your forum shortname
+          (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());

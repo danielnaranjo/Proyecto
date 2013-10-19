@@ -1,0 +1,39 @@
+extends layout
+
+block content
+	section#login
+		div#loginL
+			form(action='#', method='post', id='flogin')
+				h3 Please sign in
+				label Username
+				input(type='text', placeholder='Username', autofocus='autofocus', id="username")
+				label Password
+				input(type='password', placeholder='Password', id="password")
+				label.checkb Remember me
+				input(type='checkbox', value='remember-me')
+				button(type='submit',id='blogin') Sign in
+				p Or Sign in with
+				button.btn.btn-xlarge.btn-facebook 
+					i.icon-facebook 
+						| Connect with Facebook
+				button.btn.btn-xlarge.btn-twitter 
+					i.icon-twitter 
+						| Connect with Twitter
+		div#loginL
+			form(action='#', method='post')
+				h3 Sign Up
+				label Username
+				input(type='text', placeholder='Username', autofocus='autofocus', name="username")
+				label Password
+				input(type='password', placeholder='Password', name="password")
+				p.
+				label First name
+				input(type='text', autofocus='autofocus', name="firstname")
+				label Lastname
+				input(type='text', autofocus='autofocus', name="lastname")
+				label E-mail
+				input(type='text', placeholder='@', autofocus='autofocus', name="email")
+				label City (Optional)
+				input(type='text', autofocus='autofocus', name="city")
+				button(type='submit') Sign up
+	// login

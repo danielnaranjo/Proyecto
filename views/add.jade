@@ -1,0 +1,36 @@
+extends layout
+
+block content
+	section#newone
+		form(action='#')
+		div#loginL
+			h3 Post a Ad
+			label Title
+			input.form-control(type='text', autofocus='autofocus')
+			label Description
+			textarea#description
+			div#categories 
+				ul
+					li carro 
+					li casa 
+					li apartamento
+
+		div#loginR
+			h3 Photo and other information
+			label Photo
+			input(type='file')
+			div#drag Or drag and drop the file here
+			label Username
+			input.form-control(type='text', placeholder='Username', autofocus='autofocus')
+			label Password
+			input.form-control(type='password', placeholder='Password')
+			button Post Now
+	//post a add
+	//script(src='http://tinymce.cachefly.net/4.0/tinymce.min.js')
+	//
+		script
+			tinymce.init({
+				selector:"textarea#description",
+				theme: "modern",
+				toolbar:"bold italic | alignleft aligncenter alignright alignjustify"
+				});

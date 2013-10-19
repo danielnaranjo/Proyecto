@@ -1,0 +1,117 @@
+doctype 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    title= title
+    meta(name='description', content='Our values: Easy to use, Easy to publish, Easy to buy. Verified user (Your security is our priority), Geolocation ads (No more typing where you are), Categories? No way! Your search is our categories!, Share, Call, Comments and all you need before your transation (More Social connections)')
+    meta(name='author', content='Daniel Naranjo')
+    link(rel='icon', type='image/png', href='/img/favicon.ico')
+    // <script src="/js/prefixfree.min.js"></script>
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/estilos.css')
+    link(rel='stylesheet', href='/css/animate-custom.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.css')
+    link(rel='stylesheet', href='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css')
+    //if lt IE 8
+      script(src='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css')
+    script(src='/js/ga.js')
+  body
+    #wrap
+      header
+        #logo
+          | beta*
+        // logo
+        // dime donde estoy
+        #busqueda
+          span.icon-search(aria-hidden='true')
+        // busqueda
+        #ubicacion
+          span.icon-location(aria-hidden='true')
+        // ubicacion
+        #elmenu
+          span.icon-profile(aria-hidden='true')
+        // menu
+        #dondeestoy
+        // Notificacion
+      // header
+      
+      section#buscador
+        #lacaja
+          form(action='/')
+            div
+              input#w(type='type')
+              p Comienza aqui
+        #tags
+          ul
+            li.tag1
+              a(href='#') Lorem ipsum
+            li.tag2
+              a(href='#') Dolor sit amet
+            li.tag3
+              a(href='#') Consectetur adipiscing elit
+            li.tag2
+              a(href='#') Proin 
+            li.tag4
+              a(href='#') Sagittis libero
+            li.tag1
+              a(href='#') Aliquet augue
+            li.tag1
+              a(href='#') Quisque dui lacus
+            li.tag5
+              a(href='#') Consequat
+            li.tag2
+              a(href='#') Dictum non
+            li.tag1
+              a(href='#') Venenatis et tortor
+            li.tag3
+              a(href='#') Suspendisse mauris
+            li.tag4
+              a(href='#') In accumsan 
+            li.tag1
+              a(href='#') Egestas neque
+      // buscador
+      
+      block content
+
+      footer
+        div
+          | 2013 &copy Daniel Naranjo & Lo Ultimo Group (Venezuela). Version 
+          em Beta
+          | .
+        #gratis
+          | Aun tenemos 
+          span.timer 
+          |  avisos gratis..
+      // footer
+    // wrap
+
+    #opciones
+      ul
+        li
+          a(href='/add') Publicar un anuncio
+        li
+          a(href='/explorer') Explorar
+        li
+          a(href='/login') Perfil
+        li
+          a(href='http://who.findby.co') Quienes Somos
+        li
+          a(href='http://faq.findby.co') Preguntas frecuentes
+        li
+          a(href='http://privacy.findby.co') Privacidad
+        li
+          a(href='http://contact.findby.co') Contactenos
+    //menu
+
+    // scripts
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.js')
+    //script(src='http://www.parsecdn.com/js/parse-1.2.12.min.js') 
+    script(src='/js/masonry.pkgd.min.js')
+    script(src='/js/tag-it.min.js') 
+    script(src='/js/contador.js')
+    script(src='/js/app.js')
+    

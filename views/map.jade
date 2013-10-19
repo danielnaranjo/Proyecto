@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	section
+		div#mapa Cargando / Loading
+		// map
+
+		script(src='http://leafletjs.com/dist/leaflet.js')
+		//http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js
+		script.
+			//parseFloat(miubicacion[0]),parseFloat(miubicacion[1])
+			var apimap ="2aa8946815814d3ea0bb70bd8e8a8ea5";
+			setTimeout(function() {  
+				$('#mapa').html('')
+				var map = L.map('mapa',{ center: [51.505, -0.09],zoom: 13 });
+				console.log(map);
+			}, 5000);
+			L.tileLayer('http://{s}.tile.cloudmade.com/'+apimap+'/997/256/{z}/{x}/{y}.png', {
+			maxZoom: 18,
+			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'}).addTo(map);
+			var popup = L.popup();
