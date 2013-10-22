@@ -11,7 +11,7 @@ var app = express();
 //var io = require('socket.io').listen(app);
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080); //3000
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.set('view options', { pretty: true });
