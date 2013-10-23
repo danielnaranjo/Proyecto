@@ -24,13 +24,13 @@ app.use(express.session());
 app.use(app.router);
 app.use(require('stylus').middleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.locals.pretty = true;
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
-  app.locals.pretty = true;
 }
+
 
 // Rutas peligrosas :)
 app.get('/', function(request, response) {

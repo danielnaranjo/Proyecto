@@ -60,7 +60,7 @@ $(document).ready(function(e) {
 
 	$("#contenido").html('<ul></ul>');		
 	for(var i=1; i<=data.length-1; i++) {	
-		$("#contenido ul").append('<li class="box" id="idem'+i+'"><a href="/d"><img src="http://placehold.it/'+ data[i][0] +'x'+ data[i][1] +'" alt=""></a><a href="/d"><h3>Proin ut quam eros</h3></a> Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat.</li>');
+		$("#contenido ul").append('<li class="box" id="idem'+i+'"><a href="/d"><img src="http://placeimg.com/'+ data[i][0] +'/'+ data[i][1] +'/any" alt=""></a><a href="/d"><h3>Proin ut quam eros</h3></a> Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat.</li>');
 		$("#idem"+ i).css('height', data[i][1]+60);
 		//console.log(data[i][0] +'->'+ data[i][1]);
 	}
