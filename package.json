@@ -1,12 +1,11 @@
 {
   "name": "findBY",
   "version": "0.0.2",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
   "dependencies": {
     "express": "latest",
     "jade": "*"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
