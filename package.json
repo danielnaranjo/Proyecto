@@ -8,13 +8,5 @@
   "dependencies": {
     "express": "latest",
     "jade": "*",
-    "passport": "latest",
-    "passport-local": "*",
-    "passport-facebook": "latest",
-    "passport-twitter": "latest",
-    "mandrill-api": "*",
-    "socket.io": "*",
-    "leaflet":"*",
-    "node-polyglot":"*"
   }
 }
