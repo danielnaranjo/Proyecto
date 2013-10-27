@@ -8,7 +8,20 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 var app = express();
+require('newrelic');
 //var io = require('socket.io').listen(app);
+
+/*
+var mongoose = require ("mongoose");
+var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/HelloMongoose';
+mongoose.connect(uristring, function (err, res) {
+  if (err) {
+    console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+  } else {
+    console.log ('Succeeded connected to: ' + uristring);
+  }
+});
+*/
 
 // all environments
 app.set('port', process.env.PORT || 5000); //3000
