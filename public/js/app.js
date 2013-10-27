@@ -1,18 +1,14 @@
-	//Parse.initialize("RqQEJnAKitMqGLcNtN0ijJ1sLvgL5sx8unBoSTpn", "7U8bj5j5vgtxT06NrD9Et1TzS7uNNIKS4xrV3I6m");
 	var miubicacion = new Array();
-
 	function randomFromInterval(from,to) {
 		return Math.floor(Math.random()*(to-from+1)+from);
 	}
-
 	function showPosition(position) {
 		var lat = position.coords.latitude;
 		var lng = position.coords.longitude;
 		miubicacion[0]=lat.toFixed(3);
 		miubicacion[1]=lng.toFixed(3);
 		//console.log(miubicacion[0]+','+miubicacion[1]);
-	}
-			
+	}	
 	function onError() {
 		if (navigator.geolocation) {
 			$('#dondeestoy').append("Error: The Geolocation service failed.");
@@ -144,7 +140,7 @@ $(document).ready(function(e) {
     });
 
 
-    /* Contador de anuncios */
+    /* Contador de anuncios
 	$('.timer').countTo({
         from: 0,
         to: 1000000,
@@ -155,7 +151,8 @@ $(document).ready(function(e) {
             $("#gratis").hide();
         }
     })
-
+    */
+    
     /* Quick Start by parse.com
     var User = Parse.Object.extend("User");
     var User = new User();
@@ -184,6 +181,9 @@ $(document).ready(function(e) {
     $('.fs1').qtip({
     	style: { classes: 'qtip-light qtip-shadow' }
     });
+    $('header div').qtip({
+    	style: { classes: 'qtip-light qtip-shadow' }
+    });
 
 	/* Anuncios similares */
 	$("#contenido2").html('<ul></ul>');	
@@ -205,5 +205,12 @@ $(document).ready(function(e) {
 
 	var Lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || 'en').substr(0, 2).toLowerCase();
 	//console.log(Lang);
+
+	$.MultiLanguage('/js/language.json');
+	$("#lang a").on('click', function() {
+		event.preventDefault();
+		var id = $(this).attr("id");
+		$.MultiLanguage('language.json', id);
+	});
 //
 });

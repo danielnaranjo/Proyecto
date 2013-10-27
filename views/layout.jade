@@ -90,28 +90,30 @@ html(lang='en')
     #opciones
       ul
         li
-          a(href='/add') Publicar un anuncio
+          a(href='/add') {language.en[0]}
         li
           a(href='/explorer') Explorar
         li
           a(href='/login') Perfil
         li
-          a(href='http://who.findby.co') Quienes Somos
+          a(href='#') Quienes Somos
         li
-          a(href='http://faq.findby.co') Preguntas frecuentes
+          a(href='#') Preguntas frecuentes
         li
-          a(href='http://privacy.findby.co') Privacidad
+          a(href='#') Privacidad
         li
-          a(href='http://contact.findby.co') Contactenos
+          a(href='#') Contactenos
+        li
+          &nbsp;
+        li
+          a(href='#') Contactenos
     //menu
 
     // scripts
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js')
     script(src='http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.js')
-    //script(src='http://www.parsecdn.com/js/parse-1.2.12.min.js') 
     script(src='/js/masonry.pkgd.min.js')
     script(src='/js/tag-it.min.js') 
-    script(src='/js/contador.js')
+    script(src='/js/jquery.MultiLanguage.min.js')
     script(src='/js/app.js')
-    

@@ -4,6 +4,8 @@
   "dependencies": {
     "express": "latest",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "mongodb" : "1.1.11",
+    "newrelic" : "*"
   }
 }
