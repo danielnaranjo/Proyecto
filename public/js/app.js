@@ -75,7 +75,7 @@ $(document).ready(function(e) {
 
 	if(miubicacion[0]<=0) {
 		$('#dondeestoy').html('');
-		$("#dondeestoy").append('<p>Cargando localizacion, por favor espere..</p>');
+		$("#dondeestoy").append('<p>Loading your location, hold on..</p>');
 		$('#dondeestoy').css('display', 'inline');
 		$("#dondeestoy").removeClass().addClass("fadeInUp"); 
 		setTimeout(function() {  
@@ -88,7 +88,7 @@ $(document).ready(function(e) {
 	$("#ubicacion").on('click', function() { 
 		//console.log('ubicacion');
 	    $('#dondeestoy').html('');
-		$("#dondeestoy").append('<p>Estas cerca de '+miubicacion[0]+','+miubicacion[1]+'</p>');
+		$("#dondeestoy").append('<p>Maybe you\'re nearby '+miubicacion[0]+','+miubicacion[1]+'</p>');
 		$('#dondeestoy').css('display', 'inline');
 		$("#dondeestoy").removeClass().addClass("fadeInDown"); 
 		setTimeout(function() {  

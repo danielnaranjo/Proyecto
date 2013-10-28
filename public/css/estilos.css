@@ -807,3 +807,19 @@ ul.tagit li.tagit-choice a.tagit-close .text-icon:hover {
   vertical-align: top;
   width: 45%;
 }
+.findby-responsive {
+  width: 320px;
+  height: 50px;
+}
+@media screen and (max-width: 480px) {
+  .findby-responsive {
+    width: 468px;
+    height: 60px;
+  }
+}
+@media (min-width: 800px) {
+  .findby-responsive {
+    width: 728px;
+    height: 90px;
+  }
+}
